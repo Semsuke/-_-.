@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Задание №1");
+            Console.WriteLine();
+            Console.WriteLine("Лабораторная работа №1. Разработка консольного приложения.");
+            Console.WriteLine("Алиризаев Самир Муратович");
+            Console.WriteLine("Группа: ИНС-б-о-18-2; код специальности: 09.03.02");
+            Console.WriteLine("Дата рождения:27.04.2000");
+            Console.WriteLine("г. Черкесск");
+            Console.WriteLine("Любимый предмет в школе: изобразительное искусство");
+            Console.WriteLine("Хобби: рисование, фотография, игра на электрогитаре");
+            Console.WriteLine();
+            Console.WriteLine("Задание №2");
+            Console.WriteLine();
+            Console.WriteLine("_G_1=y1+y2+y3-(y1+y2+y3)/3;");
+            double _G_1;
+            Console.WriteLine("Введите значения переменных:");
+            Console.Write("y1 = ");
+            string y_1 = Console.ReadLine();
+            int y1 = Convert.ToInt32(y_1);
+            Console.Write("y2 = ");
+            string y_2 = Console.ReadLine();
+            double y2 = Convert.ToDouble(y_2);
+            Console.Write("y3 = ");
+            string y_3 = Console.ReadLine();
+            int y3 = Convert.ToInt32(y_3);
+            Console.WriteLine("Значения переменных: y1 = {0}; y2 = {1}; y3 = {2}", y1, y2, y3);
+            Console.WriteLine("");
+            _G_1 = y1 + y2 + y3 - (y1 + y2 + y3) / 3;
+            Console.WriteLine("Результат вычислений: _G_1 = {0}", _G_1);
+            Console.ReadKey();
+        }
+    }
+}
